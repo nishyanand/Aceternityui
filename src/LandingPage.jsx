@@ -18,7 +18,7 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center py-20 px-6 bg-gray-50">
+      <section id="hero" className="flex flex-col items-center justify-center text-center py-20 px-6 bg-gray-50">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
           Empowering Your Investments with AI Technology
         </h2>
@@ -36,7 +36,7 @@ export default function LandingPage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 px-8 bg-white text-center">
+      <section id="features" className="py-16 px-8 bg-white text-center">
         <h3 className="text-3xl font-bold mb-10">Features</h3>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="p-6 shadow-md rounded-xl">
@@ -61,7 +61,7 @@ export default function LandingPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 px-8 bg-gray-50">
+      <section id="benefits" className="py-16 px-8 bg-gray-50">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <img
             src="https://via.placeholder.com/500x350"
@@ -81,7 +81,7 @@ export default function LandingPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 px-8 bg-white text-center">
+      <section id="pricing" className="py-16 px-8 bg-white text-center">
         <h3 className="text-3xl font-bold mb-10">Pricing Plans</h3>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="p-6 border rounded-lg shadow-sm">
@@ -124,7 +124,7 @@ export default function LandingPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 px-8 bg-gray-50 text-center">
+      <section id="testimonials" className="py-16 px-8 bg-gray-50 text-center">
         <h3 className="text-3xl font-bold mb-10">What Our Users Say</h3>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="p-6 shadow-md rounded-lg bg-white">
@@ -149,7 +149,7 @@ export default function LandingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 px-8 bg-white">
+      <section id="faq" className="py-16 px-8 bg-white">
         <h3 className="text-3xl font-bold mb-10 text-center">Frequently Asked Questions</h3>
         <div className="max-w-3xl mx-auto space-y-6">
           <div>
