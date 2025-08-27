@@ -4,7 +4,7 @@ export default function LandingPage() {
       {/* Navbar */}
       <header className="flex justify-between items-center px-8 py-4 shadow-md">
         <h1 className="text-xl font-bold">Aset</h1>
-        <nav className="hidden md:flex gap-6 text-gray-700">
+        <nav className="hidden md:flex gap-6 text-gray-700 dark:text-gray-300">
           <a href="#">Home</a>
           <a href="#">Feature</a>
           <a href="#">Benefit</a>
@@ -18,11 +18,11 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section id="hero" className="flex flex-col items-center justify-center text-center py-20 px-6 bg-gray-50">
+      <section id="hero" className="flex flex-col items-center justify-center text-center py-20 px-6 border rounded-xl border-gray-400">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
           Empowering Your Investments with AI Technology
         </h2>
-        <p className="text-lg max-w-2xl mb-8 text-gray-600">
+        <p className="text-lg max-w-2xl mb-8 text-gray-600 dark:text-gray-300">
           Transform your portfolio with real-time insights and smarter decision-making.
         </p>
         <div className="flex gap-4">
@@ -36,22 +36,22 @@ export default function LandingPage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-16 px-8 bg-white text-center">
+      <section id="features" className="py-16 px-8 text-center">
         <h3 className="text-3xl font-bold mb-10">Features</h3>
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="p-6 shadow-md rounded-xl">
+          <div className="p-6 shadow-md border rounded-xl border-gray-400">
             <h4 className="text-xl font-semibold mb-4">AI-Powered Insights</h4>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-gray-300">
               Leverage machine learning for accurate investment predictions.
             </p>
           </div>
-          <div className="p-6 shadow-md rounded-xl">
+          <div className="p-6 shadow-md border rounded-xl border-gray-400 dark:border-gray-700 bg-white dark:bg-neutral-900">
             <h4 className="text-xl font-semibold mb-4">Real-Time Analytics</h4>
             <p className="text-gray-600">
               Monitor live data and market trends at your fingertips.
             </p>
           </div>
-          <div className="p-6 shadow-md rounded-xl">
+          <div className="p-6 shadow-md border rounded-xl border-gray-400">
             <h4 className="text-xl font-semibold mb-4">Secure Platform</h4>
             <p className="text-gray-600">
               Advanced security protocols ensure safe transactions.
@@ -61,14 +61,14 @@ export default function LandingPage() {
       </section>
 
       {/* Benefits Section */}
-      <section id="benefits" className="py-16 px-8 bg-gray-50">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <section id="benefits" className="py-16 px-8 ">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center ">
           <img
             src="https://via.placeholder.com/500x350"
             alt="AI Investment"
             className="rounded-lg shadow-lg"
           />
-          <div>
+          <div className="border rounded-xl border-gray-400 p-6">
             <h3 className="text-3xl font-bold mb-6">Why Choose Aset?</h3>
             <ul className="space-y-4 text-gray-700">
               <li>✅ Smarter decision-making with AI assistance</li>
@@ -81,7 +81,7 @@ export default function LandingPage() {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-16 px-8 bg-white text-center">
+      <section id="pricing" className="py-16 px-8 text-center">
         <h3 className="text-3xl font-bold mb-10">Pricing Plans</h3>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="p-6 border rounded-lg shadow-sm">
@@ -96,7 +96,7 @@ export default function LandingPage() {
               Choose Plan
             </button>
           </div>
-          <div className="p-6 border rounded-lg shadow-lg bg-gray-50">
+          <div className="p-6 border rounded-lg shadow-lg">
             <h4 className="text-xl font-semibold mb-4">Pro</h4>
             <p className="text-4xl font-bold mb-6">$29<span className="text-lg">/mo</span></p>
             <ul className="mb-6 text-gray-600 space-y-2">
@@ -124,7 +124,7 @@ export default function LandingPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-16 px-8 bg-gray-50 text-center">
+      <section id="testimonials" className="py-16 px-8 text-center">
         <h3 className="text-3xl font-bold mb-10">What Our Users Say</h3>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="p-6 shadow-md rounded-lg bg-white">
@@ -133,7 +133,7 @@ export default function LandingPage() {
             </p>
             <h4 className="font-semibold">— Sarah K.</h4>
           </div>
-          <div className="p-6 shadow-md rounded-lg bg-white">
+          <div className="p-6 shadow-md rounded-lg bg-white dark:bg-neutral-900">
             <p className="text-gray-600 mb-4">
               "I finally feel confident in my portfolio thanks to real-time tracking."
             </p>
@@ -149,22 +149,22 @@ export default function LandingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="py-16 px-8 bg-white">
+      <section id="faq" className="py-16 px-8 ">
         <h3 className="text-3xl font-bold mb-10 text-center">Frequently Asked Questions</h3>
         <div className="max-w-3xl mx-auto space-y-6">
-          <div>
+          <div className="border rounded-xl border-gray-400 p-4">
             <h4 className="font-semibold">How does Aset use AI for investments?</h4>
             <p className="text-gray-600">
               Our algorithms analyze real-time market data to provide actionable insights.
             </p>
           </div>
-          <div>
+          <div className="border rounded-xl border-gray-400 p-4">
             <h4 className="font-semibold">Is my data secure?</h4>
             <p className="text-gray-600">
               Yes, we use bank-level encryption to ensure your data is safe.
             </p>
           </div>
-          <div>
+          <div className="border rounded-xl border-gray-400 p-4">
             <h4 className="font-semibold">Can I cancel anytime?</h4>
             <p className="text-gray-600">
               Absolutely! You can cancel or switch plans at any time.
@@ -182,7 +182,7 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-6 px-8 bg-gray-800 text-gray-300 text-center">
+      <footer className="py-6 px-8 text-gray-300 dark:text-gray-400 text-center">
         <p>© {new Date().getFullYear()} Aset. All rights reserved.</p>
       </footer>
     </div>

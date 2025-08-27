@@ -5,12 +5,12 @@ export default function App() {
   return (
     <div className="relative min-h-screen bg-black text-white">
       {/* Background Beams */}
-      <BackgroundBeamsWithCollision />
-
-      {/* Foreground content */}
-      <div className="relative z-10">
-        <LandingPage />
-      </div>
+      <BackgroundBeamsWithCollision>
+        {/* Foreground content */}
+        <div className="relative z-10">
+          <LandingPage />
+        </div>
+      </BackgroundBeamsWithCollision>
     </div>
   );
 }

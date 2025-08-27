@@ -14,50 +14,109 @@ export const BackgroundBeamsWithCollision = ({
     {
       initialX: 10,
       translateX: 10,
+      duration: 8,
+      repeatDelay: 0,
+      delay: 2,
+    },
+    {
+      initialX: 1100,
+      translateX: 1100,
+      duration: 6,
+      repeatDelay: 0,
+      delay: 6,
+    },
+    {
+      initialX: 500,
+      translateX: 500,
+      duration: 5,
+      repeatDelay: 0,
+      delay: 5,
+    },
+    {
+      initialX: 900,
+      translateX: 900,
+      duration: 6,
+      repeatDelay: 0,
+      delay: 5,
+    },
+    {
+      initialX: 1000,
+      translateX: 1000,
+      duration: 6,
+      repeatDelay: 0,
+      delay: 6,
+    },
+    {
+      initialX: 200,
+      translateX: 200,
       duration: 7,
-      repeatDelay: 3,
+      repeatDelay: 0,
+      delay: 2,
+    },
+    {
+      initialX: 300,
+      translateX: 300,
+      duration: 7,
+      repeatDelay: 0,
+      delay: 3,
+    },
+    {
+      initialX: 700,
+      translateX: 700,
+      duration: 6,
+      repeatDelay: 0,
+      delay: 3,
+    },
+    {
+      initialX: 900,
+      translateX: 900,
+      duration: 7,
+      repeatDelay: 0,
       delay: 2,
     },
     {
       initialX: 600,
       translateX: 600,
-      duration: 3,
-      repeatDelay: 3,
+      duration: 5,
+      repeatDelay: 0,
       delay: 4,
     },
     {
       initialX: 100,
       translateX: 100,
-      duration: 7,
-      repeatDelay: 7,
+      duration: 8,
+      repeatDelay: 0,
+      delay: 2,
       className: "h-6",
     },
     {
       initialX: 400,
       translateX: 400,
-      duration: 5,
-      repeatDelay: 14,
+      duration: 6,
+      repeatDelay: 0,
       delay: 4,
     },
     {
       initialX: 800,
       translateX: 800,
-      duration: 11,
-      repeatDelay: 2,
+      duration: 8,
+      repeatDelay: 0,
+      delay: 2,
       className: "h-20",
     },
     {
       initialX: 1000,
       translateX: 1000,
-      duration: 4,
-      repeatDelay: 2,
+      duration: 5,
+      repeatDelay: 0,
+      delay: 4,
       className: "h-12",
     },
     {
       initialX: 1200,
       translateX: 1200,
-      duration: 6,
-      repeatDelay: 4,
+      duration: 7,
+      repeatDelay: 0,
       delay: 2,
       className: "h-6",
     },
@@ -67,7 +126,8 @@ export const BackgroundBeamsWithCollision = ({
     <div
       ref={parentRef}
       className={cn(
-        "h-96 md:h-[40rem] bg-gradient-to-b from-white to-neutral-100 dark:from-neutral-950 dark:to-neutral-800 relative flex items-center w-full justify-center overflow-hidden",
+        // "h-96 md:h-[40rem] bg-gradient-to-b from-white to-neutral-100 dark:from-neutral-950 dark:to-neutral-800 relative flex items-center w-full justify-center overflow-hidden",
+        "h-auto bg-white dark:bg-black relative flex items-center w-full justify-center overflow-hidden",
         // h-screen if you want bigger
         className
       )}>
@@ -81,7 +141,7 @@ export const BackgroundBeamsWithCollision = ({
       {children}
       <div
         ref={containerRef}
-        className="absolute bottom-0 bg-neutral-100 w-full inset-x-0 pointer-events-none"
+        className="absolute bottom-0 bg-neutral-100 dark:bg-black w-full inset-x-0 pointer-events-none"
         style={{
           boxShadow:
             "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset",
@@ -159,7 +219,7 @@ const CollisionMechanism = React.forwardRef(({ parentRef, containerRef, beamOpti
         }}
         variants={{
           animate: {
-            translateY: beamOptions.translateY || "1800px",
+            translateY: beamOptions.translateY || "5000px",
             translateX: beamOptions.translateX || "0px",
             rotate: beamOptions.rotate || 0,
           },
